@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <style>
+            body{
+                background-color: rgb(212, 212, 250);
+            }
+            .label-size{
+                font-size: 25px;
+                margin-left: 15px;
+            }
+           
+        </style>
+    </head>
+
+    <body>
+        <h1>INST377 - Lab 2 - Contact Me</h1>
+        <form name="contactform" method="get" action="Inst377-week2_lecture_formsuccess.html">
+    
+            <!-- User name details -->
+            <label for="firstname"> First Name:</label>
+            <input type="text" id="firstname" required>
+            <br>
+
+            <label for="lastname"> Last Name:</label>
+            <input type="text" id="lastname" required>
+            <br>
+            <hr>
+        
+            <!-- Inquiry date -->
+             <div class="label-size">
+            <label for="inquirydate">Inquiry Date:</label>
+            <input type="datetime-local" id="inquirydate" required>
+            <br>
+        </div>
+            <!-- Inquiry reason -->
+            <label for="reason">Inquiry Type:</label><br>
+            <input type="radio" name="reason"> Media Inquires <br>
+            <input type="radio" name="reason"> General Inquires <br>
+            <input type="radio" name="reason"> Corporate Inquires <br>
+            <br>
+            <hr>
+            <!-- address-->
+            <h3>Address</h3>
+            <label for="street"> Street:</label>
+            <input type="text" id="street"><br>
+            <label for="city"> City:</label>
+            <input type="text" id="City"><br>
+            <label for="state"> State:</label>
+            <input type="text" id="state" maxlength="2"><br>
+            <label for="zipcode"> Zipcode:</label>
+            <input type="text" id="zipcode" maxlength="5"><br>
+            <br>
+            <hr>
+            <!-- University Affiliation -->
+             <label for="university"> What university are you affiliated with:</label>
+             <select id="university" name="university's">
+                <option hidden disabled selected>-- Select option --</option>
+                <option vale="umd">UMD</option>
+                <option vale="umbc">UMBC</option>
+                <option value="other">Other</option>
+             </select>
+             <br>
+             <!-- Email -->
+              <label for="email"> What is the best email to reach you at?</label>
+              <input type="email" id="email" placeholder="test@gmail.com" required>
+              <br>
+              <hr>
+
+        
+
+
+            <br>
+    
+            <input type="submit" value="submit">
+       
+        </form>
+    </body>
+</html>
